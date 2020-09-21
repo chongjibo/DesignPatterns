@@ -151,15 +151,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="BuilderModel.cpp" />
     <ClCompile Include="DesignModel.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Prototype.cpp" />
+    <ClCompile Include="Singleton.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Adapter.h" />
     <ClInclude Include="BuilderModel.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Prototype.h" />
+    <ClInclude Include="Singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

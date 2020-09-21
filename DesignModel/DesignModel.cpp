@@ -5,6 +5,7 @@
 #include "Factory.h"
 #include "BuilderModel.h"
 #include "Prototype.h"
+#include "Adapter.h"
 
 int main()
 {
@@ -41,11 +42,18 @@ int main()
 	std::cout << "HLSMeal : " << hlsMeal->getDrink() << hlsMeal->getFood() << std::endl;*/
 
 	//原型模式
-	ResumeA *resumeA = new ResumeA("ResumeAA");
+	/*ResumeA *resumeA = new ResumeA("ResumeAA");
 	resumeA->show();
 
 	Resume *resumeAA = resumeA->clone();
-	resumeAA->show();
+	resumeAA->show();*/
+
+	//适配器模式
+	Duck *duck = new ClassAdapter();
+	duck->quack();
+	duck->fly();
+
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
