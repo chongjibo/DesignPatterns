@@ -152,16 +152,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Adapter.cpp" />
+    <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="BuilderModel.cpp" />
-    <ClCompile Include="DesignModel.cpp" />
+    <ClCompile Include="Composite.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="Prototype.cpp" />
     <ClCompile Include="Singleton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adapter.h" />
+    <ClInclude Include="Bridge.h" />
     <ClInclude Include="BuilderModel.h" />
+    <ClInclude Include="Composite.h" />
     <ClInclude Include="Factory.h" />
+    <ClInclude Include="Decorator.h" />
     <ClInclude Include="Prototype.h" />
     <ClInclude Include="Singleton.h" />
   </ItemGroup>

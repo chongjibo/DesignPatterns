@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DesignModel.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Factory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -31,6 +28,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Singleton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -48,6 +57,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
