@@ -42,6 +42,15 @@
     <ClCompile Include="Decorator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Facade.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Flyweight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -66,6 +75,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Decorator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Flyweight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

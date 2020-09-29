@@ -2,6 +2,6 @@
 c:\users\pc002\source\repos\designmodel\designmodel\composite.h(97): warning C4018: “<”: 有符号/无符号不匹配
 c:\users\pc002\source\repos\designmodel\designmodel\composite.h(109): warning C4018: “>”: 有符号/无符号不匹配
 c:\users\pc002\source\repos\designmodel\designmodel\composite.h(118): warning C4018: “<”: 有符号/无符号不匹配
-  Decorator.cpp
+  Proxy.cpp
   正在生成代码...
   DesignModel.vcxproj -> C:\Users\PC002\source\repos\DesignModel\Debug\DesignModel.exe
