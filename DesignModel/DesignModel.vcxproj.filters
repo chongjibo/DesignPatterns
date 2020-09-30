@@ -51,6 +51,9 @@
     <ClCompile Include="Proxy.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CoR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Factory.h">
@@ -84,6 +87,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Proxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CoR.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

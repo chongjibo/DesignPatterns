@@ -12,6 +12,7 @@
 #include "Facade.h"
 #include "Flyweight.h"
 #include "Proxy.h"
+#include "CoR.h"
 
 //工厂模式
 void testFactory()
@@ -188,9 +189,33 @@ void testProxy()
 	proxy->method();
 }
 
+//职责链模式
+void testChainofResponsibility()
+{
+	Bill *bill1 = new Bill(1, "小明", 5);
+	Bill *bill2 = new Bill(2, "小花", 10);
+	Bill *bill3 = new Bill(3, "小李", 40);
+	Bill *bill4 = new Bill(4, "小张", 60);
+
+	Approver *gl = new GroupLeader("阿明");
+	Approver *hd = new Head("阿娇");
+	Approver *mg = new Manager("阿伟");
+	Approver *boss = new BOSS("阿楞");
+
+	gl->setSuperior(hd);
+	hd->setSuperior(mg);
+	mg->setSuperior(boss);
+
+	gl->handleRequest(bill1);
+	gl->handleRequest(bill2);
+	gl->handleRequest(bill3);
+	gl->handleRequest(bill4);
+}
+
 int main()
 {
-	testProxy();
+	testChainofResponsibility();
+	//testProxy();
 	//testFlyweight();
 	//testFacade();
 }
