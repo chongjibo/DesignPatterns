@@ -154,6 +154,7 @@
     <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="BuilderModel.cpp" />
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="Composite.cpp" />
     <ClCompile Include="CoR.cpp" />
     <ClCompile Include="Facade.cpp" />
@@ -169,6 +170,7 @@
     <ClInclude Include="Adapter.h" />
     <ClInclude Include="Bridge.h" />
     <ClInclude Include="BuilderModel.h" />
+    <ClInclude Include="Command.h" />
     <ClInclude Include="Composite.h" />
     <ClInclude Include="CoR.h" />
     <ClInclude Include="Facade.h" />

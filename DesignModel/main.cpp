@@ -13,6 +13,7 @@
 #include "Flyweight.h"
 #include "Proxy.h"
 #include "CoR.h"
+#include "Command.h"
 
 //工厂模式
 void testFactory()
@@ -212,9 +213,27 @@ void testChainofResponsibility()
 	gl->handleRequest(bill4);
 }
 
+void testCommand()
+{
+	Button *button = new Button();
+	Command *lampCommand = new LampCommand;
+	Command *fanCommand = new FanCommand;
+
+	button->setCommand(lampCommand);
+	button->touch();
+	button->touch();
+	button->touch();
+
+	button->setCommand(fanCommand);
+	button->touch();
+	button->touch();
+	button->touch();
+}
+
 int main()
 {
-	testChainofResponsibility();
+	testCommand();
+	//testChainofResponsibility();
 	//testProxy();
 	//testFlyweight();
 	//testFacade();
