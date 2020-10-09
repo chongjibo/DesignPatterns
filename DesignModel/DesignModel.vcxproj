@@ -159,6 +159,7 @@
     <ClCompile Include="CoR.cpp" />
     <ClCompile Include="Facade.cpp" />
     <ClCompile Include="Flyweight.cpp" />
+    <ClCompile Include="Interpreter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Decorator.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Decorator.h" />
     <ClInclude Include="Flyweight.h" />
+    <ClInclude Include="Interpreter.h" />
     <ClInclude Include="Prototype.h" />
     <ClInclude Include="Proxy.h" />
     <ClInclude Include="Singleton.h" />
