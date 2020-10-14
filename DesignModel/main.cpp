@@ -1,6 +1,5 @@
 ﻿
 // DesignModel.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-
 #include <iostream>
 #include "Factory.h"
 #include "BuilderModel.h"
@@ -15,6 +14,8 @@
 #include "CoR.h"
 #include "Command.h"
 #include "Interpreter.h"
+#include "Iterator.h"
+#include "Mediator.h"
 
 //工厂模式
 void testFactory()
@@ -264,6 +265,62 @@ void testInterpreter()
 	handler->setInput(input_13); handler->handle();
 }
 
+//迭代器模式
+void testIterator()
+{
+	std::vector<std::string> channelList = { "新闻频道", "财经频道", "体育频道", "电影频道", "音乐频道", "农业频道", "四川卫视", "成都卫视" };
+	Television *tv = new Television(channelList);
+	//创建遥控器
+	Iterator *remoteControl = tv->createIterator();
+
+	std::cout << "顺序遍历" << std::endl;
+	remoteControl->first();
+	while (remoteControl->hasNext())
+	{
+		remoteControl->currentChannel();
+		remoteControl->next();
+	}
+
+	std::cout << "逆序遍历" << std::endl;
+	remoteControl->last();
+	while (remoteControl->hasPrevious())
+	{
+		remoteControl->currentChannel();
+		remoteControl->previous();
+	}
+}
+
+//中介者模式
+void testMediator()
+{
+	//中介
+	Agency *agency = new Agency;
+
+	//房东
+	Landlord *lanloard1 = new Landlord("小米", 1300, "枫韵蓝湾", "123456");
+	Landlord *lanloard2 = new Landlord("大米", 1200, "新西兰", "654987");
+	Landlord *lanloard3 = new Landlord("红米", 1100, "伟业公馆", "852147");
+
+	lanloard1->setMediator(agency);
+	lanloard2->setMediator(agency);
+	lanloard3->setMediator(agency);
+
+	agency->registerMethod(lanloard1);
+	agency->registerMethod(lanloard2);
+	agency->registerMethod(lanloard3);
+
+	Tenant *tenant1 = new Tenant("小张");
+	Tenant *tenant2 = new Tenant("大张");
+
+	tenant1->setMediator(agency);
+	tenant2->setMediator(agency);
+
+	agency->registerMethod(tenant1);
+	agency->registerMethod(tenant2);
+
+	lanloard1->ask();
+	tenant1->ask();
+}
 
 int main()
 {
@@ -273,7 +330,9 @@ int main()
 	//testFlyweight();
 	//testFacade();
 
-	testInterpreter();
+	//testInterpreter();
+	//testIterator();
+	testMediator();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
